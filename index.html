@@ -10,6 +10,55 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>WELCOME TO TAREK MAHMUD'S BANK</h1>
+    <div id="login-area" class="container px-5">
+        <h1 class="text-center mb-5 mt-5">WELCOME TO TAREK MAHMUD'S BANK</h1>
+        <div class="submit-area">
+            <h4>Login</h4>
+            <input class="form-control" type="email" placeholder="Enter your Email">
+            <input class="form-control" type="password" placeholder="Enter your password">
+            <button id="loginBtn" class="btn btn-success">Enter</button>
+        </div>
+    </div>
+    <div id="transaction-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="statas diposit">
+                        <h4>Diposit</h4>
+                        <h2>$ <span id="current-deposite">00</span></h2>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="statas withdrow">
+                        <h4>Withdrow</h4>
+                        <h2>$ <span id="currentWithdrow">00</span></h2>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="statas balance">
+                        <h4>Balance</h4>
+                        <h2>$ <span id="currentBalance">1200</span></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5 pt-3">
+                <div class="col-md-6">
+                    <div class="submit-area">
+                        <h4>Doposite</h4>
+                        <input type="text" id="depositeAmount" placeholder="$ Amount you want to deposite" class="form-control">
+                        <button class="btn btn-success" id="dipositeBtn">diposite</button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="submit-area">
+                        <h4>withdrow</h4>
+                        <input type="text" id="withdrowAmount" placeholder="$ Amount you want to withdrow" class="form-control">
+                        <button id="withdrowBtn" class="btn btn-success">withdrow</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
 </body>
 </html>

@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    padding: 50px;
+}
+.submit-area{
+    margin: auto;
+    padding:30px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px gray;
+}
+.submit-area input{
+    margin: 20px 0;
+}
+#transaction-area{
+    display: none;
+    margin-top: 50px;
+}
+.statas{
+    background: red;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 20px;
+    color: white;
+}
+.diposit{
+    background: slateblue;
+}
+.withdrow{
+    background: lightsalmon;
+}
+.balance{
+    background: orange;
+}
