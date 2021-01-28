@@ -18,6 +18,12 @@ dipositeButton.addEventListener('click', function(){
 
     document.getElementById('depositeAmount').value = "";
 });
+function addSpanText(id, depositeAmountNumber){
+    const currentBalance = document.getElementById(id).innerText;
+    const currentBalanceNumber = parseFloat(currentBalance);
+    const totalBalance = currentBalanceNumber + depositeAmountNumber;
+    document.getElementById(id).innerText = totalBalance;
+}
     const withdrowBtn = document.getElementById('withdrowBtn');
     withdrowBtn.addEventListener('click', function(){
         getWithdrowBalance('currentWithdrow');
@@ -39,9 +45,4 @@ dipositeButton.addEventListener('click', function(){
     }
 
 
-function addSpanText(id, depositeAmountNumber){
-    const currentBalance = document.getElementById(id).innerText;
-    const currentBalanceNumber = parseFloat(currentBalance);
-    const totalBalance = currentBalanceNumber + depositeAmountNumber;
-    document.getElementById(id).innerText = totalBalance;
-}
+
